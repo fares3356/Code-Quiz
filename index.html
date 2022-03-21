@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Link-->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Code Quiz</title>
+</head>
+<body>
+    <!--Link to see the current high scores-->
+    <button class="leader-btn"><a href="highscores.html">View The Leaderbord</a></button>
+    <section id="wrapper">
+        <!--This is where the countdown timer will be shown-->
+        <div id="currentTime"></div>
+        <section class="quiz-questions" id="questionsDiv">
+            <h1>Welcome To The Code Quiz! Lets Test Your Knowledge!</h1>
+            <h2>Read Rules Below</h2>
+            <p> All questions are coding related.
+                <br>There will be a time limit of 75 seconds.
+                <br>Incorrect answers <emp>will cost you 10 seconds of time and reduce your score.</emp> 
+                <br> Good Luck.
+            </p>
+            <ol id="choicesUl"></ol>
+            <button id="startTime" class="start-btn">Start Quiz</button>
+        </section>
+    </section>
+
+    <script src="assets/js/questions.js"></script>
+</body>
+</html>
